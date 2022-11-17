@@ -16,7 +16,7 @@ namespace SecondExercise
                 Console.Write("Enter your choice here (enter \"exit\" to exit): ");
                 var choice = Console.ReadLine();
 
-                switch (choice)
+                switch (choice.ToLower())
                 {
                     case "2":
                         Console.WriteLine("Thứ 2");
@@ -36,10 +36,9 @@ namespace SecondExercise
                     case "7":
                         Console.WriteLine("Thứ 7");
                         break;
-                    case "CN":
+                    case "cn":
                         Console.WriteLine("Chủ nhật");
                         break;
-                    case "Exit":
                     case "exit":
                         return;
                     default:
