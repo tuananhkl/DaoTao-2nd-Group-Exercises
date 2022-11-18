@@ -8,6 +8,7 @@ namespace FirstExercise
         static void Main(string[] args)
         {
             // 1. Cho 1 mảng giá trị [2,3,1,5,4,6,8,20,14]
+            // var intArray = new[] {2, 3, 1, 5, 4, 6, 8, 20, 14};
             var intArray = new[] {2, 3, 1, 5, 4, 6, 8, 20, 14};
             int smallestNumber = default;
 
@@ -19,6 +20,13 @@ namespace FirstExercise
         {
             //     - Tìm giá trị nhỏ nhất trong mảng
             smallestNumber = Int32.MaxValue;
+            
+            //validate input data
+            if (intArray.Length < 1)
+            {
+                return;
+            }
+            
             for (int i = 0; i < intArray.Length; i++)
             {
                 if (intArray[i] < smallestNumber)
